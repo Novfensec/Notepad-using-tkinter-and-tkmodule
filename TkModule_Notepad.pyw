@@ -28,7 +28,7 @@ def Save():
             f.write(context)
             f.close()
 
-            root.tk.title(os.path.basename(file) + " - nfsNote")
+            root.tk.title(os.path.basename(file) + " - Notepad")
     else:
         # Save the file
         f = open(file, "w")
@@ -44,7 +44,7 @@ def Open():
         file=None
     
     else:
-        root.tk.title(os.path.basename(file) + " - nfsNote")
+        root.tk.title(os.path.basename(file) + " - Notepad")
         root.Textvar.delete(1.0,END)
         f=open(file,'r')
         context=f.read()

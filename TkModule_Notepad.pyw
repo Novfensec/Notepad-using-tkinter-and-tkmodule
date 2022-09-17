@@ -4,6 +4,7 @@ from tkinter.filedialog import askopenfilename,asksaveasfilename
 from tkinter.messagebox import showinfo
 import os
 
+# Parent Window
 root=createTk()
 root.Window(title="Untitled - Notepad",fullscreen=True)
 
@@ -59,8 +60,10 @@ def About():
 
 file=None
 
+# Menubar
 menubar=Menubars(root)
 
+# filemenu starts
 menubar.createMenu()
 menubar.addCmd(label="New",command=New)
 menubar.addCmd(label="Open",command=Open)
@@ -69,6 +72,7 @@ menubar.nav.add_separator()
 menubar.addCmd(label="Exit",command=Quit)
 menubar.addHead(label="File")
 
+# helpmenu starts
 menubar.createMenu()
 menubar.addCmd(label="About Notepad",command=About)
 menubar.addHead(label="Help")
@@ -76,6 +80,5 @@ menubar.addHead(label="Help")
 menubar.view()
 
 Textfont=font.Font(family="Trebuchet-MS",size=18)
-
 root.textarea(scroll=True,fill=BOTH,expand=True,border=5,relief=FLAT,font=Textfont)
 root.Run()

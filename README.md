@@ -4,4 +4,4 @@ Build a notepad instantly using TkModule - A Tkinter Utility Framework
 <html>
 <pre><code>pip install tkmodule</code></pre>
 
-https://www.youtube.com/embed/s_TFEMCpVE0
+https://youtu.be/s_TFEMCpVE0

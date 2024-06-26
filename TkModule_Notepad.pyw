@@ -1,4 +1,4 @@
-from tkmodule.tkmodule import *
+from tkmodule import *
 from tkinter import font
 from tkinter.filedialog import askopenfilename,asksaveasfilename
 from tkinter.messagebox import showinfo
